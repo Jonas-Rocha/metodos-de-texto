@@ -47,3 +47,18 @@ console.log(textWithSpace.length);
 // Remove espaços em branco no início e no final de uma string
 // Ele não remove espaços no meio de uma string pois entende que faz parte da string normal.
 console.log(textWithSpace.trim());
+
+const creditCard = "1234567812344928";
+console.log(creditCard.length);
+
+const lastDigits = creditCard.slice(-4);
+// console.log(lastDigits);
+
+// O padStart preenche a string do início.
+const maskedNumber = lastDigits.padStart(/*16*/ creditCard.length, "X");
+console.log(maskedNumber);
+
+// O padEnd preenche a string no final.
+
+const number = "123";
+console.log(number.padEnd(10, "#"));
