@@ -62,3 +62,19 @@ console.log(maskedNumber);
 
 const number = "123";
 console.log(number.padEnd(10, "#"));
+
+// Separando e unindo strings
+
+let text = "Estudar, Aprender, Praticar";
+
+// Separar a String.
+let separate = text.split(",");
+console.log(separate);
+
+let message1 = "Estou aprendendo Javascript";
+
+console.log(message1.split("en"));
+
+// Unir a String.
+let joined = separate.join(" - ");
+console.log(joined);
