@@ -78,3 +78,20 @@ console.log(message1.split("en"));
 // Unir a String.
 let joined = separate.join(" - ");
 console.log(joined);
+
+//Encontrando um conteúdo no texto
+// Obtém a posição da palavra.
+console.log(message.indexOf("Javascript"));
+
+// Quando não encontra retorna -1
+console.log(message.indexOf("javascript"));
+
+// Verifica se existe a palavra na String.
+// O Javascript é case sensitive então tome cuidado.
+console.log(message.includes("Javascript"));
+
+// Porem, se eu passar o texto todo para maiúsculo ou miúsculo antes, ele vai contrar pois o texto foi transformado antes.
+console.log(message.toUpperCase().includes("JAVASCRIPT"));
+
+console.log(includes("HTML"));
+console.log(includes("estudando os fundamentos"));
